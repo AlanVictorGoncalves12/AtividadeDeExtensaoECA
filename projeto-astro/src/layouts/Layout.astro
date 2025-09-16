@@ -5,12 +5,12 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>{Astro.props.frontmatter.title}</title>
 	</head>
 	<body>
 
     <header>
-        <h1>Contato</h1>
+        <h1>{Astro.props.frontmatter.title}</h1>
     </header>
 		
     <nav>
@@ -19,7 +19,7 @@
         <a href="servicos.html">Serviços</a>
         <a href="contato.html">Contato</a>
         <a href="noticias.html">Notícias</a>
-        <a href="eca.html">ECA Explicado</a>
+        <a href="/eca">ECA Explicado</a>
         <a href="faq.html">Perguntas Frequentes (FAQ)</a>
         <a href="orientacao.html">Orientação</a>
         <a href="historias.html">Histórias</a>
