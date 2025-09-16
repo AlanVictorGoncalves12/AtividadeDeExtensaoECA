@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f0f4f8;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            width: 100%;
+            padding: 20px 0;
+            background-color: #0077cc;
+            color: white;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+        }
+
+        nav {
+            margin: 20px 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #0077cc;
+            color: white;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        nav a:hover {
+            background-color: #005fa3;
+            transform: translateY(-2px);
+        }
+
+        main {
+            width: 90%;
+            max-width: 800px;
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+
+        /* Markdown ready styling */
+        main h2, main h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        main p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        main ul, main ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        main code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao site sobre o ECA</h1>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="contato.html">Contato</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="eca.html">ECA Explicado</a>
+        <a href="faq.html">Perguntas Frequentes (FAQ)</a>
+        <a href="orientacao.html">Orientação</a>
+        <a href="historias.html">Histórias</a>
+        <a href="parcerias.html">Parcerias</a>
+    </nav>
+
+    <main>
+        <!-- Conteúdo Markdown pode ser inserido aqui -->
+
+        <div id="conteudo"></div>
+
+        <script>
+            // Exemplo de texto em Markdown
+            /*const markdownText = `
+                            # 🏠 Conselho Tutelar
+
+                ## Protegendo os direitos de crianças e adolescentes
+
+                O **Conselho Tutelar** é uma instituição essencial criada pelo **Estatuto da Criança e do Adolescente (ECA)**, com a missão de garantir a proteção e a defesa dos direitos de crianças e adolescentes em situações de vulnerabilidade.  
+                Estamos ao lado da comunidade para orientar famílias, atender denúncias e encaminhar casos para os serviços públicos de saúde, educação, justiça e assistência social.
+
+                ---
+
+                ## 🌟 Missão, Visão e Valores
+
+                - **Missão:** Defender os direitos fundamentais de crianças e adolescentes.  
+                - **Visão:** Ser referência na proteção e promoção da infância e adolescência.  
+                - **Valores:** Ética, responsabilidade social, respeito, transparência e acolhimento.  
+
+                ---
+
+                ## 🛠️ Nossos Serviços
+
+                ✔️ **Atendimento a denúncias** – Situações de violência, negligência, abuso ou exploração.  
+                ✔️ **Orientação às famílias** – Apoio e encaminhamento para os serviços necessários.  
+                ✔️ **Encaminhamentos oficiais** – Saúde, educação, justiça e assistência social.  
+                ✔️ **Ações educativas** – Palestras, campanhas e atividades de prevenção.  
+
+                ---
+
+                ## 📌 Acesso Rápido
+
+                - 👉 [Conheça o ECA](http://www.planalto.gov.br/ccivil_03/leis/L8069compilado.htm)  
+                - 📢 [Como Denunciar](#)  
+                - 🛠️ [Serviços do Conselho](#)  
+
+                ---
+
+                ## 📰 Notícias e Campanhas Recentes
+
+                ### 🚸 Campanha contra o Trabalho Infantil
+                O Conselho Tutelar reforça a importância da denúncia de casos de exploração do trabalho infantil.  
+                ➡️ Denuncie pelo **Disque 100**.
+
+                ### 📖 Semana do ECA nas Escolas
+                Atividades em escolas e centros comunitários para orientar famílias e jovens sobre seus direitos fundamentais.  
+
+                ---
+
+                ## 💬 O Impacto do Conselho Tutelar
+
+                > “O Conselho Tutelar foi um apoio fundamental para proteger meu filho em um momento difícil.”  
+                — Mãe atendida pelo Conselho  
+
+                > “Nosso papel é garantir que nenhuma criança ou adolescente tenha seus direitos violados.”  
+                — Conselheiro Tutelar  
+
+                ---
+
+                ## 📞 Contato Rápido
+
+                📍 Endereço: Rua Exemplo, 123 – Centro  
+                📱 Telefone: (00) 1234-5678  
+                ✉️ E-mail: contato@conselhotutelar.org 
+            `;
+
+            // Converte para HTML e joga dentro da div
+            document.getElementById("conteudo").innerHTML = marked.parse(markdownText);*/
+        </script>
+
+
+            <h1>🏠 Conselho Tutelar</h1>
+            <p>Protegendo os direitos de crianças e adolescentes</p>
+
+            <p>O Conselho Tutelar é uma instituição essencial criada pelo Estatuto da Criança e do Adolescente (ECA), com a missão de garantir a proteção e a defesa dos direitos de crianças e adolescentes em situações de vulnerabilidade.</p>
+
+            <p>Estamos ao lado da comunidade para orientar famílias, atender denúncias e encaminhar casos para os serviços públicos de saúde, educação, justiça e assistência social.</p>
+
+            <h2>🌟 Missão, Visão e Valores</h2>
+            <p><strong>Missão:</strong> Defender os direitos fundamentais de crianças e adolescentes.</p>
+            <p><strong>Visão:</strong> Ser referência na proteção e promoção da infância e adolescência.</p>
+            <p><strong>Valores:</strong> Ética, responsabilidade social, respeito, transparência e acolhimento.</p>
+
+            <h2>🛠️ Nossos Serviços</h2>
+            <ul>
+            <li>✔️ Atendimento a denúncias – Situações de violência, negligência, abuso ou exploração.</li>
+            <li>✔️ Orientação às famílias – Apoio e encaminhamento para os serviços necessários.</li>
+            <li>✔️ Encaminhamentos oficiais – Saúde, educação, justiça e assistência social.</li>
+            <li>✔️ Ações educativas – Palestras, campanhas e atividades de prevenção.</li>
+            </ul>
+
+            <h2>📌 Acesso Rápido</h2>
+            <ul>
+            <li>👉 Conheça o ECA</li>
+            <li>📢 Como Denunciar</li>
+            <li>🛠️ Serviços do Conselho</li>
+            </ul>
+
+            <h2>📰 Notícias e Campanhas Recentes</h2>
+            <h3>🚸 Campanha contra o Trabalho Infantil</h3>
+            <p>O Conselho Tutelar reforça a importância da denúncia de casos de exploração do trabalho infantil.</p>
+            <p>➡️ Denuncie pelo Disque 100.</p>
+
+            <h3>📖 Semana do ECA nas Escolas</h3>
+            <p>Atividades em escolas e centros comunitários para orientar famílias e jovens sobre seus direitos fundamentais.</p>
+
+            <h2>💬 O Impacto do Conselho Tutelar</h2>
+            <blockquote>
+            <p>"É preciso estar sempre indignada e inconformada contra violências e injustiças."</p>
+            <footer>— Marlla Costa – Conselheira Tutelar no Distrito Federal</footer>
+            </blockquote>
+
+            <p></p>
+            <p></p>
+
+            <blockquote>
+            <p>"Os Conselhos Tutelares são a porta de entrada das violações dos direitos da criança e do adolescente e, por isso, podem salvar vidas."</p>
+            <footer>— Miriam Krenzinger – Professora da UFRJ e cofundadora do Observatório dos Conselhos</footer>
+            </blockquote>
+
+            <p></p>
+            <p></p>
+
+            <blockquote>
+            <p>"Os conselhos tutelares são a porta de entrada das ocorrências de violações de direitos de crianças e adolescentes. Por isso, devem ser fortalecidos e preparados para atender a essa grande demanda."</p>
+            <footer>— Julliana Andrade – Defensora Pública do Estado do Ceará</footer>
+            </blockquote>
+
+            <h2>📞 Contato Rápido Conselho Tutelar Mauá</h2>
+            <p><strong>📍 Endereço:</strong> R. Santos Dumont, 59 - Vila Bocaina, Mauá - SP, 09310-130</p>
+            <p><strong>📱 Telefone:</strong> (11) 4546-1444</p>
+            <p><strong>✉️ E-mail:</strong> conselhotutelar1@maua.sp.gov.br, conselhotutelar2@maua.sp.gov.br, conselhotutelar3@maua.sp.gov.br</p>
+
+    </main>
+</body>
+</html>

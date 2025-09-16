@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f0f4f8;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            width: 100%;
+            padding: 20px 0;
+            background-color: #0077cc;
+            color: white;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+        }
+
+        nav {
+            margin: 20px 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #0077cc;
+            color: white;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        nav a:hover {
+            background-color: #005fa3;
+            transform: translateY(-2px);
+        }
+
+        main {
+            width: 90%;
+            max-width: 800px;
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+
+        /* Markdown ready styling */
+        main h2, main h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        main p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        main ul, main ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        main code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Contato</h1>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="contato.html">Contato</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="eca.html">ECA Explicado</a>
+        <a href="faq.html">Perguntas Frequentes (FAQ)</a>
+        <a href="orientacao.html">Orientação</a>
+        <a href="historias.html">Histórias</a>
+        <a href="parcerias.html">Parcerias</a>
+    </nav>
+
+    <main>
+        <h1>Fale Conosco</h1>
+        <p>Aqui você pode colocar um formulário de contato ou informações de contato.</p>
+
+        <h1>📞 Contato com o Conselho Tutelar</h1>
+
+        <p>Se você presenciou ou soube de alguma situação em que os direitos de uma criança ou adolescente foram ameaçados ou violados, não hesite em procurar o Conselho Tutelar.</p>
+
+        <p>Estamos aqui para ouvir, orientar e agir.</p>
+
+        <h2>🏢 Endereço</h2>
+        <p>Rua Exemplo, nº 123 – Bairro Central<br>
+        Cidade/UF – CEP: 00000-000</p>
+        <p>👉 Veja no mapa</p>
+
+        <h2>📱 Telefones</h2>
+        <p><strong>📞 Telefone fixo:</strong> (00) 1234-5678</p>
+        <p><strong>📱 Celular/WhatsApp:</strong> (00) 91234-5678</p>
+        <p><strong>⏰ Atendimento:</strong> Segunda a sexta-feira, das 8h às 17h</p>
+        <p><strong>📢 Fora desse horário:</strong> procure os canais de emergência (190 – Polícia Militar).</p>
+
+        <h2>✉️ E-mail</h2>
+        <p><a href="mailto:contato@conselhotutelar.org.br">contato@conselhotutelar.org.br</a></p>
+
+        <h2>📢 Canais de Denúncia Nacional</h2>
+        <ul>
+        <li>Disque 100 → Central Nacional de Direitos Humanos.</li>
+        <li>190 → Emergência imediata (Polícia Militar).</li>
+        <li>181 → Disque Denúncia (em alguns estados).</li>
+        </ul>
+        <p>👉 Saiba mais sobre como denunciar na página <strong>Serviços</strong>.</p>
+
+        <h2>📋 Formulário de Contato Online</h2>
+        <p>Preencha o formulário abaixo para enviar dúvidas, sugestões ou pedidos de orientação.</p>
+        <p><em>(Não utilize este formulário para emergências. Em situações de risco imediato, ligue 190.)</em></p>
+
+        <form>
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome"><br><br>
+
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="assunto">Assunto:</label><br>
+        <input type="text" id="assunto" name="assunto"><br><br>
+
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="5" cols="40"></textarea><br><br>
+
+        <button type="submit">📩 Enviar mensagem</button>
+        </form>
+
+        <h2>🔒 Sigilo e Segurança</h2>
+        <p>Todas as denúncias e atendimentos realizados pelo Conselho Tutelar são sigilosos, visando a proteção da criança, do adolescente e da família.</p>
+
+        <p>✨ Sua voz pode proteger vidas. Entre em contato sempre que identificar uma situação de risco ou quiser saber mais sobre os direitos garantidos pelo ECA.</p>
+
+    </main>
+</body>
+</html>

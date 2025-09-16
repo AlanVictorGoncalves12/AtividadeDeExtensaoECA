@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f0f4f8;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            width: 100%;
+            padding: 20px 0;
+            background-color: #0077cc;
+            color: white;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+        }
+
+        nav {
+            margin: 20px 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #0077cc;
+            color: white;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        nav a:hover {
+            background-color: #005fa3;
+            transform: translateY(-2px);
+        }
+
+        main {
+            width: 90%;
+            max-width: 800px;
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+
+        /* Markdown ready styling */
+        main h2, main h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        main p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        main ul, main ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        main code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sobre</h1>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="contato.html">Contato</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="eca.html">ECA Explicado</a>
+        <a href="faq.html">Perguntas Frequentes (FAQ)</a>
+        <a href="orientacao.html">Orientação</a>
+        <a href="historias.html">Histórias</a>
+        <a href="parcerias.html">Parcerias</a>
+    </nav>
+
+    <main>
+        <h1>Quem Somos</h1>
+        <p>Aqui você pode contar a história, missão, visão e valores do site ou organização.</p>
+
+        <section>
+            <h1>ℹ️ Sobre o Conselho Tutelar</h1>
+
+            <h2>O que é o Conselho Tutelar?</h2>
+            <p>
+                O <strong>Conselho Tutelar</strong> é um órgão <strong>autônomo e permanente</strong>, criado pelo 
+                <strong>Estatuto da Criança e do Adolescente (ECA)</strong>, com a missão de <strong>zelar pelo cumprimento dos direitos</strong> de todas as crianças e adolescentes.  
+                Ele não pertence a nenhum poder específico (Executivo, Legislativo ou Judiciário), mas atua em parceria com todos eles, garantindo que a proteção integral prevista no ECA seja aplicada na prática.
+            </p>
+            <p>
+                O Conselho não é um órgão de caridade, nem um serviço de assistência social: ele é uma 
+                <strong>instituição de defesa dos direitos fundamentais</strong>, acionada sempre que esses direitos são ameaçados ou violados.
+            </p>
+
+            <hr>
+
+            <h2>Origem e Base Legal</h2>
+            <p>
+                O Conselho Tutelar foi instituído em 1990, com a criação do <strong>ECA (Lei 8.069/1990)</strong>.  
+                Sua função é aplicar as medidas de proteção previstas nos <strong>artigos 98 a 102</strong> do Estatuto, em casos como:
+            </p>
+            <ul>
+                <li>Violência física, psicológica ou sexual</li>
+                <li>Negligência ou abandono</li>
+                <li>Exploração no trabalho infantil</li>
+                <li>Crianças e adolescentes fora da escola</li>
+                <li>Situações de risco social e familiar</li>
+            </ul>
+            <p>
+                👉 <a href="http://www.planalto.gov.br/ccivil_03/leis/L8069compilado.htm" target="_blank">Clique aqui e conheça mais sobre o ECA</a>
+            </p>
+
+            <hr>
+
+            <h2>Quem compõe o Conselho Tutelar?</h2>
+            <p>
+                Cada município deve ter pelo menos <strong>um Conselho Tutelar</strong>, formado por <strong>cinco conselheiros eleitos pela comunidade</strong> para um mandato de quatro anos.  
+                Esses profissionais têm a responsabilidade de:
+            </p>
+            <ul>
+                <li>Atender crianças e adolescentes em situação de vulnerabilidade</li>
+                <li>Atender e orientar pais ou responsáveis</li>
+                <li>Requisitar serviços públicos nas áreas de saúde, educação, assistência social e segurança</li>
+                <li>Encaminhar casos ao Ministério Público ou ao Judiciário, quando necessário</li>
+            </ul>
+
+            <hr>
+
+            <h2>Relação com a Comunidade</h2>
+            <p>
+                O Conselho Tutelar é a <strong>porta de entrada</strong> para muitos casos de violação de direitos.  
+                Por isso, manter uma <strong>boa comunicação com a população</strong> é essencial.  
+                A comunidade pode procurar o Conselho para:
+            </p>
+            <ul>
+                <li>Fazer denúncias de situações de risco</li>
+                <li>Buscar orientação sobre os direitos das crianças e adolescentes</li>
+                <li>Saber quais serviços públicos podem ser acionados para apoio familiar</li>
+                <li>Participar de campanhas e ações educativas promovidas pelo Conselho</li>
+            </ul>
+            <p>
+                👉 <a href="servicos.html">Veja nossos Serviços</a> para entender como atuamos no dia a dia.
+            </p>
+
+            <hr>
+
+            <h2>Importância para a Sociedade</h2>
+            <p>
+                A atuação do Conselho Tutelar impacta diretamente no <strong>desenvolvimento social</strong> e na construção de uma sociedade mais justa e igualitária.  
+                Ao garantir que <strong>toda criança e adolescente tenha acesso à educação, saúde, convivência familiar e dignidade</strong>, o Conselho ajuda a <strong>prevenir violências</strong> e promove a <strong>participação cidadã</strong>.
+            </p>
+            <blockquote>“Cuidar das crianças hoje é investir em um futuro melhor para todos.”</blockquote>
+
+            <hr>
+
+            <h2>Nossa Conexão com o ECA</h2>
+            <p>
+                O Conselho Tutelar só existe por causa do <strong>Estatuto da Criança e do Adolescente</strong>.  
+                Enquanto o ECA é a <strong>lei que garante os direitos</strong>, o Conselho é a <strong>instituição que faz valer esses direitos na prática</strong>.  
+                Por isso, conhecer o ECA é também compreender melhor o papel do Conselho.
+            </p>
+            <p>
+                👉 <a href="#">Conheça o ECA de forma simples e acessível na nossa página dedicada</a>
+            </p>
+
+            <hr>
+
+            <h2>Missão, Visão e Valores</h2>
+            <ul>
+                <li><strong>Missão:</strong> Defender os direitos fundamentais das crianças e adolescentes, atuando em situações de ameaça ou violação.</li>
+                <li><strong>Visão:</strong> Ser reconhecido como referência de proteção e garantia dos direitos infantojuvenis, promovendo conscientização e cidadania.</li>
+                <li><strong>Valores:</strong> Ética, responsabilidade, acolhimento, respeito, transparência e compromisso social.</li>
+            </ul>
+
+            <hr>
+
+            <h2>Como entrar em contato?</h2>
+            <p>
+                Se você tem dúvidas, deseja orientação ou precisa denunciar uma situação de risco, saiba que o Conselho Tutelar está à disposição para ouvir e ajudar.
+            </p>
+            <p>
+                👉 <a href="#">Fale Conosco</a><br>
+                👉 <a href="#">Veja como denunciar</a>
+            </p>
+
+            <hr>
+
+            <p><em>✨ O Conselho Tutelar existe para garantir que cada criança e adolescente tenha seus direitos respeitados. Conhecer e apoiar essa missão é dever de toda a sociedade.</em></p>
+        </section>
+
+    </main>
+</body>
+</html>
