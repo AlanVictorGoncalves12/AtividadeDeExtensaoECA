@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro Basics</title>
+	</head>
+	<body>
+
+    <header>
+        <h1>Contato</h1>
+    </header>
+		
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="contato.html">Contato</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="eca.html">ECA Explicado</a>
+        <a href="faq.html">Perguntas Frequentes (FAQ)</a>
+        <a href="orientacao.html">Orientação</a>
+        <a href="historias.html">Histórias</a>
+        <a href="parcerias.html">Parcerias</a>
+    </nav>
+
+	<main>
+		<slot />
+	</main>
+	</body>
+</html>
+
+<style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f0f4f8;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            width: 100%;
+            padding: 20px 0;
+            background-color: #0077cc;
+            color: white;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+        }
+
+        nav {
+            margin: 20px 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #0077cc;
+            color: white;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        nav a:hover {
+            background-color: #005fa3;
+            transform: translateY(-2px);
+        }
+
+        main {
+            width: 90%;
+            max-width: 800px;
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+
+        /* Markdown ready styling */
+        main h2, main h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        main p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        main ul, main ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        main code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+    </style>
