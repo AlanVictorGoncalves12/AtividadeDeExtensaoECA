@@ -1,3 +1,5 @@
-# BATATA
+# Esse é um site criado para a atividade de extensão para a faculdade Uniasselvi
 
-BATATA FRITA
+Agradeço a visualização!
+
+O site ainda está em produção.
