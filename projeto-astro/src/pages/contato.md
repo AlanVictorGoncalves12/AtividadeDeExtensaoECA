@@ -42,21 +42,6 @@ contato@conselhotutelar.org.br
 
 ---
 
-## 📋 Formulário de Contato Online
-
-Preencha o formulário abaixo para enviar dúvidas, sugestões ou pedidos de orientação.  
-*(Não utilize este formulário para emergências. Em situações de risco imediato, ligue 190.)*  
-
-**Nome:** [__________]  
-**E-mail:** [__________]  
-**Assunto:** [__________]  
-**Mensagem:**  
-[__________________________________________]  
-
-📩 [Enviar mensagem]  
-
----
-
 ## 🔒 Sigilo e Segurança
 Todas as denúncias e atendimentos realizados pelo Conselho Tutelar são **sigilosos**, visando a proteção da criança, do adolescente e da família.  
 
