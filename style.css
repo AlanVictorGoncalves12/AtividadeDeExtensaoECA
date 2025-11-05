@@ -80,3 +80,57 @@
             border-radius: 4px;
             font-family: monospace;
         }
+
+
+
+
+ /* Codigos para site responsivo */
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }     
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap; /* Permite que os botões quebrem linha se precisarem */
+            justify-content: center;
+            /*background-color: #007bff;*/
+            padding: 10px;
+            border-radius: 10px;
+            }
+
+            nav a {
+            color: white;
+            text-decoration: none;
+            /*background-color: #0d6efd;*/
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+            }
+
+            nav a:hover {
+            background-color: #0056b3; 
+            }
+
+            /* ==== ESTILO RESPONSIVO (CELULARES E TABLETS) ==== */
+            @media (max-width: 768px) {
+            nav {
+                flex-direction: column; /* Faz os botões ficarem em coluna */
+                align-items: stretch;
+            }
+
+            nav a {
+                display: block;
+                text-align: center;
+                width: 100%;
+                margin: 5px 0;
+            }
+        }
